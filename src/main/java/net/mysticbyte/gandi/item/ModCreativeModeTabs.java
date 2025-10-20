@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.UNFORMED_HARMONY_GEAR);
                         output.accept(ModItems.UNFORMED_RADIANCE_GEAR);
                         output.accept(ModItems.UNFORMED_STORM_GEAR);
+                        output.accept(ModItems.UNFORMED_RADIANCE_LENS);
+                        output.accept(ModItems.UNFORMED_HARMONY_LENS);
+                        output.accept(ModItems.UNFORMED_STORM_LENS);
+                        output.accept(ModItems.UNFORMED_DAWN_LENS);
                     })
                     .build());
 

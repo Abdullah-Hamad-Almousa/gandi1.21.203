@@ -24,6 +24,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()) );
     public static final DeferredItem<Item> UNFORMED_HARMONY_GEAR = ITEMS.register("unformed_harmony_gear",
             () -> new Item(new Item.Properties()) );
+    public static final DeferredItem<Item> UNFORMED_HARMONY_LENS = ITEMS.register("unformed_harmony_lens",
+            () -> new Item(new Item.Properties()) );
+    public static final DeferredItem<Item> UNFORMED_STORM_LENS = ITEMS.register("unformed_storm_lens",
+            () -> new Item(new Item.Properties()) );
+    public static final DeferredItem<Item> UNFORMED_DAWN_LENS = ITEMS.register("unformed_dawn_lens",
+            () -> new Item(new Item.Properties()) );
+    public static final DeferredItem<Item> UNFORMED_RADIANCE_LENS = ITEMS.register("unformed_radiance_lens",
+            () -> new Item(new Item.Properties()) );
 
     public static void register(IEventBus eventBus){
 
