@@ -1,6 +1,7 @@
 package net.mysticbyte.gandi;
 
 import net.mysticbyte.gandi.block.ModBlocks;
+import net.mysticbyte.gandi.item.ModCreativeModeTabs;
 import net.mysticbyte.gandi.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,8 +35,11 @@ public class GandI {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
