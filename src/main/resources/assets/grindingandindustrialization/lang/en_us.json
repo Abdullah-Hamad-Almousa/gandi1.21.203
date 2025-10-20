@@ -5,5 +5,13 @@
   "item.grindingandindustrialization.unformed_dawn_gear": "Unformed dawn gear",
   "item.grindingandindustrialization.unformed_radiance_gear": "Unformed radiance gear",
   "item.grindingandindustrialization.unformed_harmony_gear": "Unformed harmony gear",
-  "item.grindingandindustrialization.unidentified_gear": "Unidentified gear"
+  "item.grindingandindustrialization.unidentified_gear": "Unidentified gear",
+
+  "block.grindingandindustrialization.unformed_harmony_gear_block": "Unformed harmony gear block",
+  "block.grindingandindustrialization.unformed_storm_gear_block": "Unformed storm gear block",
+  "block.grindingandindustrialization.unformed_dawn_gear_block": "Unformed dawn gear block",
+  "block.grindingandindustrialization.unidentified_gear_block": "Unidentified gear block",
+  "block.grindingandindustrialization.inactive_gear_block": "Inactive gear block",
+  "block.grindingandindustrialization.unstoppable_gear_block": "Unstoppable gear block",
+  "block.grindingandindustrialization.unformed_radiance_gear_block": "Unformed radiance gear block"
 }
