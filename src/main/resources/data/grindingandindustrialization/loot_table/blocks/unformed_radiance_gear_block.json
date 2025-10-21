@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bouns_rolls": 0.0,
+      "conditions": [
+        {
+        "condition": "minecraft:survives_explosion"
+      }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "grindingandindustrialization:unformed_radiance_gear_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "grindingandindustrialization:blocks/unformed_radiance_gear_block"
+
+}
