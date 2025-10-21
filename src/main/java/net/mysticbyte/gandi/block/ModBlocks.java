@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.mysticbyte.gandi.GandI;
+import net.mysticbyte.gandi.block.custom.MutatorBlock;
 import net.mysticbyte.gandi.item.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -49,7 +50,13 @@ public class ModBlocks {
                     .strength(4f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> CORRUPTED_BLOCK_D = registerBlock(
             "corrupted_block_d", () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(4f, 36000000f).requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> MUTATOR_BLOCK = registerBlock("mutator_block",
+            () -> new MutatorBlock(BlockBehaviour.Properties.of()
+                    .strength(4f, 36000000f).requiresCorrectToolForDrops()
+                    .sound(SoundType.ANCIENT_DEBRIS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

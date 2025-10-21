@@ -32,7 +32,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.UNFORMED_HARMONY_LENS);
                         output.accept(ModItems.UNFORMED_STORM_LENS);
                         output.accept(ModItems.UNFORMED_DAWN_LENS);
-
+                        //customs items
                         output.accept(ModItems.DAWN_WAND);
                         output.accept(ModItems.STORM_WAND);
                         output.accept(ModItems.HARMONY_WAND);
@@ -56,6 +56,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CORRUPTED_BLOCK_B);
                         output.accept(ModBlocks.CORRUPTED_BLOCK_C);
                         output.accept(ModBlocks.CORRUPTED_BLOCK_D);
+                        //customs blocks
+                        output.accept(ModBlocks.MUTATOR_BLOCK);
                     })
                     .build());
 

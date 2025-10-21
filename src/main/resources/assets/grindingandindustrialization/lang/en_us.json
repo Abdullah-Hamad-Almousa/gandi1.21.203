@@ -16,6 +16,8 @@
   "item.grindingandindustrialization.harmony_wand": "Harmony wand",
   "item.grindingandindustrialization.radiance_wand": "Radiance wand",
 
+  "block.grindingandindustrialization.mutator_block": "Mutator block",
+
   "block.grindingandindustrialization.unformed_harmony_gear_block": "Unformed harmony gear block",
   "block.grindingandindustrialization.unformed_storm_gear_block": "Unformed storm gear block",
   "block.grindingandindustrialization.unformed_dawn_gear_block": "Unformed dawn gear block",
@@ -27,7 +29,6 @@
   "block.grindingandindustrialization.corrupted_block_b": "Corrupted block",
   "block.grindingandindustrialization.corrupted_block_c": "Corrupted block",
   "block.grindingandindustrialization.corrupted_block_d": "Corrupted block",
-
   "creativetab.grindingandindustrialization.unstoppable_gear_items": "G and I Items",
   "creativetab.grindingandindustrialization.unstoppable_gear_blocks": "G and I Blocks"
 }
