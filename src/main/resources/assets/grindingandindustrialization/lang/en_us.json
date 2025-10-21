@@ -18,6 +18,10 @@
   "block.grindingandindustrialization.inactive_gear_block": "Inactive gear block",
   "block.grindingandindustrialization.unstoppable_gear_block": "Unstoppable gear block",
   "block.grindingandindustrialization.unformed_radiance_gear_block": "Unformed radiance gear block",
+  "block.grindingandindustrialization.corrupted_block_a": "Corrupted block",
+  "block.grindingandindustrialization.corrupted_block_b": "Corrupted block",
+  "block.grindingandindustrialization.corrupted_block_c": "Corrupted block",
+  "block.grindingandindustrialization.corrupted_block_d": "Corrupted block",
 
   "creativetab.grindingandindustrialization.unstoppable_gear_items": "G and I Items",
   "creativetab.grindingandindustrialization.unstoppable_gear_blocks": "G and I Blocks"

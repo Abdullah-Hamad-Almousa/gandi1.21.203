@@ -47,6 +47,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.UNFORMED_HARMONY_GEAR_BLOCK);
                         output.accept(ModBlocks.UNFORMED_STORM_GEAR_BLOCK);
                         output.accept(ModBlocks.UNFORMED_RADIANCE_GEAR_BLOCK);
+                        output.accept(ModBlocks.CORRUPTED_BLOCK_A);
+                        output.accept(ModBlocks.CORRUPTED_BLOCK_B);
+                        output.accept(ModBlocks.CORRUPTED_BLOCK_C);
+                        output.accept(ModBlocks.CORRUPTED_BLOCK_D);
                     })
                     .build());
 

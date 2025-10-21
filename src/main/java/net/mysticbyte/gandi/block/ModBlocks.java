@@ -38,6 +38,18 @@ public class ModBlocks {
     public static final DeferredBlock<Block> UNSTOPPABLE_GEAR_BLOCK = registerBlock(
             "unstoppable_gear_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(50f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CORRUPTED_BLOCK_A = registerBlock(
+            "corrupted_block_a", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(20f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CORRUPTED_BLOCK_B = registerBlock(
+            "corrupted_block_b", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(20f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CORRUPTED_BLOCK_C = registerBlock(
+            "corrupted_block_c", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(20f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CORRUPTED_BLOCK_D = registerBlock(
+            "corrupted_block_d", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(20f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

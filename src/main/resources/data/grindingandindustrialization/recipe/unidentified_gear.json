@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+
+    {
+      "item": "grindingandindustrialization:unidentified_gear_block"
+
+    }
+
+  ],
+  "result": {
+    "count": 6,
+    "id": "grindingandindustrialization:unidentified_gear"
+
+  }
+
+}
