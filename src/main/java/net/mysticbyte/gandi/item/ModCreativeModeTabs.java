@@ -32,6 +32,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.UNFORMED_HARMONY_LENS);
                         output.accept(ModItems.UNFORMED_STORM_LENS);
                         output.accept(ModItems.UNFORMED_DAWN_LENS);
+
+                        output.accept(ModItems.DAWN_WAND);
+                        output.accept(ModItems.STORM_WAND);
+                        output.accept(ModItems.HARMONY_WAND);
+                        output.accept(ModItems.RADIANCE_WAND);
                     })
                     .build());
 

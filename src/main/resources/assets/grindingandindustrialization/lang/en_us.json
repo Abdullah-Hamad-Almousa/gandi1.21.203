@@ -11,6 +11,11 @@
   "item.grindingandindustrialization.unformed_dawn_lens": "Unformed dawn lens",
   "item.grindingandindustrialization.unformed_storm_lens": "Unformed storm lens",
 
+  "item.grindingandindustrialization.dawn_wand": "Dawn wand",
+  "item.grindingandindustrialization.storm_wand": "Storm wand",
+  "item.grindingandindustrialization.harmony_wand": "Harmony wand",
+  "item.grindingandindustrialization.radiance_wand": "Radiance wand",
+
   "block.grindingandindustrialization.unformed_harmony_gear_block": "Unformed harmony gear block",
   "block.grindingandindustrialization.unformed_storm_gear_block": "Unformed storm gear block",
   "block.grindingandindustrialization.unformed_dawn_gear_block": "Unformed dawn gear block",
