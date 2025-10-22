@@ -31,6 +31,39 @@
   "block.grindingandindustrialization.corrupted_block_b": "Corrupted block",
   "block.grindingandindustrialization.corrupted_block_c": "Corrupted block",
   "block.grindingandindustrialization.corrupted_block_d": "Corrupted block",
+
   "creativetab.grindingandindustrialization.unstoppable_gear_items": "G and I Items",
-  "creativetab.grindingandindustrialization.unstoppable_gear_blocks": "G and I Blocks"
+  "creativetab.grindingandindustrialization.unstoppable_gear_blocks": "G and I Blocks",
+
+  "tooltip.grindingandindustrialization.mutator_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.corrupted_a_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.corrupted_b_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.corrupted_c_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.corrupted_d_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.unidentified_gear_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.bread_unstoppable": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.unidentified_gear": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.unformed_dawn_gear": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.dawn_wand": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.storm_wand": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.harmony_wand": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.radiance_wand": "Press §eshift§r for more info",
+
+  "tooltip.grindingandindustrialization.unidentified_gear_shift": "Something about this feels §5changeable§r",
+  "tooltip.grindingandindustrialization.unformed_dawn_gear_shift": "It seems this can affect like §llava bucket§r",
+  "tooltip.grindingandindustrialization.dawn_wand_shift": "It seems this can §naffect things§r",
+  "tooltip.grindingandindustrialization.storm_wand_shift": "It seems this can §1affect things§r",
+  "tooltip.grindingandindustrialization.harmony_wand_shift": "It seems this can §2affect things§r",
+  "tooltip.grindingandindustrialization.radiance_wand_shift": "It seems this can §eaffect things§r",
+
+  "tooltip.grindingandindustrialization.unidentified_gear_block_shift": "Something about this feels §5changeable§r",
+
+  "tooltip.grindingandindustrialization.corrupted_a_block_shift": "This block requires significant §1work§r",
+  "tooltip.grindingandindustrialization.corrupted_b_block_shift": "This block §2needs§r moderate preparation",
+  "tooltip.grindingandindustrialization.corrupted_c_block_shift": "This block is §enearly§r ready§r",
+  "tooltip.grindingandindustrialization.corrupted_d_block_shift": "This block is §eready to mine§r",
+
+  "tooltip.grindingandindustrialization.bread_unstoppable_shift": "This food §9give you§r protection before big fight",
+
+  "tooltip.grindingandindustrialization.mutator_block_shift": "Power sleeps within, waiting to §5change§r all"
 }
