@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "grindingandindustrialization:unformed_dawn_gear",
+    "grindingandindustrialization:unformed_radiance_gear",
+    "grindingandindustrialization:unformed_harmony_gear",
+    "grindingandindustrialization:inactive_gear",
+    "grindingandindustrialization:unstoppable_gear",
+    "grindingandindustrialization:unidentified_gear",
+    "grindingandindustrialization:unformed_storm_gear"
+  ]
+
+}

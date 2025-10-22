@@ -9,9 +9,11 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.block.custom.MutatorBlock;
 import net.mysticbyte.gandi.item.ModItems;
+
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,7 +21,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class ModBlocks{
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(GandI.MOD_ID);
 
@@ -137,6 +139,7 @@ public class ModBlocks {
             () -> new MutatorBlock(BlockBehaviour.Properties.of()
                     .strength(4f, 36000000f).requiresCorrectToolForDrops()
                     .sound(SoundType.ANCIENT_DEBRIS)){
+
                 @Override
                 public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
