@@ -36,6 +36,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()) );
     public static final DeferredItem<Item> UNFORMED_RADIANCE_LENS = ITEMS.register("unformed_radiance_lens",
             () -> new Item(new Item.Properties()) );
+
     public static final DeferredItem<Item> DAWN_WAND = ITEMS.register("dawn_wand",
             () -> new DawnWand(new Item.Properties().durability(2)));
     public static final DeferredItem<Item> STORM_WAND = ITEMS.register("storm_wand",
@@ -44,6 +45,9 @@ public class ModItems {
             () -> new HarmonyWand(new Item.Properties().durability(2)));
     public static final DeferredItem<Item> RADIANCE_WAND = ITEMS.register("radiance_wand",
             () -> new RadianceWand(new Item.Properties().durability(2)));
+
+    public static final DeferredItem<Item> BREAD_UNSTOPPABLE = ITEMS.register("bread_unstoppable",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BREAD_UNSTOPPABLE)));
 
     public static void register(IEventBus eventBus){
 

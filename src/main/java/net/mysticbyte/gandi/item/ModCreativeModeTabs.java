@@ -37,6 +37,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STORM_WAND);
                         output.accept(ModItems.HARMONY_WAND);
                         output.accept(ModItems.RADIANCE_WAND);
+                        //custom food
+                        output.accept(ModItems.BREAD_UNSTOPPABLE);
                     })
                     .build());
 
