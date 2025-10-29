@@ -1,18 +1,12 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "ingredients": [
-
-    {
-      "item": "grindingandindustrialization:unstoppable_gear_block"
-
-    }
-
-  ],
+  "ingredient": {
+    "item": "grindingandindustrialization:inactive_gear"
+  },
   "result": {
-    "count": 6,
     "id": "grindingandindustrialization:unstoppable_gear"
-
-  }
-
+  },
+  "experience": 0.35,
+  "cookingtime": 20000
 }

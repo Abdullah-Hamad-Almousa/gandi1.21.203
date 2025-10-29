@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unformed_dawn_lens"
+    },
+    "C": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    "   ",
+    " CB",
+    "   "
+  ],
+  "result": {
+    "id": "grindingandindustrialization:dawn_wand",
+    "count": 1
+  }
+}

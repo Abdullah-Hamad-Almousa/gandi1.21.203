@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unformed_storm_gear"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "   ",
+    "CBC",
+    "   "
+  ],
+  "result": {
+    "id": "grindingandindustrialization:unformed_storm_lens",
+    "count": 1
+  }
+}

@@ -1,18 +1,24 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-
-    {
-      "item": "grindingandindustrialization:unformed_storm_gear_block"
-
+  "key": {
+    "B": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "D": {
+      "item": "minecraft:redstone"
     }
-
+  },
+  "pattern": [
+    "CDC",
+    "DBD",
+    "CDC"
   ],
   "result": {
-    "count": 6,
-    "id": "grindingandindustrialization:unformed_storm_gear"
-
+    "id": "grindingandindustrialization:unformed_storm_gear",
+    "count": 1
   }
-
 }

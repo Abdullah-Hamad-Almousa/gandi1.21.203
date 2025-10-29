@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unstoppable_gear"
+    },
+    "C": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "   ",
+    "CBC",
+    "   "
+  ],
+  "result": {
+    "id": "grindingandindustrialization:bread_unstoppable",
+    "count": 1
+  }
+}

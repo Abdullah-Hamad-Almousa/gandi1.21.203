@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unformed_radiance_lens"
+    },
+    "C": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    "   ",
+    " CB",
+    "   "
+  ],
+  "result": {
+    "id": "grindingandindustrialization:radiance_wand",
+    "count": 1
+  }
+}
