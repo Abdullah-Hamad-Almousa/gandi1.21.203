@@ -40,12 +40,12 @@ public class GandI {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -56,7 +56,11 @@ public class GandI {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
-
+/*
+    @SubscribeEvent
+        public void reload(AddReloadListenerEvent e){
+            e.addListener(new ItemTransformationLoader());
+    }*/
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

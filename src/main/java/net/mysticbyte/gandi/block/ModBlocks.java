@@ -155,6 +155,26 @@ public class ModBlocks{
                 }
             });
 
+    public static final DeferredBlock<Block> MUTATOR_BLOCK_EVO = registerBlock("mutator_block_evo",
+            () -> new MutatorBlock(BlockBehaviour.Properties.of()
+                    .strength(4f, 36000000f).requiresCorrectToolForDrops()
+                    .sound(SoundType.ANCIENT_DEBRIS)){
+
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
+                    if (Screen.hasShiftDown()){
+                        tooltipComponents.add(Component.translatable(
+                                "tooltip.grindingandindustrialization.mutator_block_evo_shift"));
+                    }else {
+                        tooltipComponents.add(Component.translatable(
+                                "tooltip.grindingandindustrialization.mutator_block_evo"));
+                    }
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -19,6 +19,7 @@
   "item.grindingandindustrialization.bread_unstoppable": "Unstoppable bread",
 
   "block.grindingandindustrialization.mutator_block": "Mutator block",
+  "block.grindingandindustrialization.mutator_block_evo": "Mutator block EVO",
 
   "block.grindingandindustrialization.unformed_harmony_gear_block": "Unformed harmony gear block",
   "block.grindingandindustrialization.unformed_storm_gear_block": "Unformed storm gear block",
@@ -36,6 +37,7 @@
   "creativetab.grindingandindustrialization.unstoppable_gear_blocks": "G and I Blocks",
 
   "tooltip.grindingandindustrialization.mutator_block": "Press §eshift§r for more info",
+  "tooltip.grindingandindustrialization.mutator_block_evo": "Press §eshift§r for more info",
   "tooltip.grindingandindustrialization.corrupted_a_block": "Press §eshift§r for more info",
   "tooltip.grindingandindustrialization.corrupted_b_block": "Press §eshift§r for more info",
   "tooltip.grindingandindustrialization.corrupted_c_block": "Press §eshift§r for more info",
@@ -65,5 +67,6 @@
 
   "tooltip.grindingandindustrialization.bread_unstoppable_shift": "This food §9give you§r protection before big fight",
 
-  "tooltip.grindingandindustrialization.mutator_block_shift": "Power sleeps within, waiting to §5change§r all"
+  "tooltip.grindingandindustrialization.mutator_block_shift": "Power sleeps within, waiting to §5change§r all",
+  "tooltip.grindingandindustrialization.mutator_block_evo_shift": "Power sleeps within, waiting to §5change§r all"
 }

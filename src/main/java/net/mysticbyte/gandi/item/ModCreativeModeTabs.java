@@ -60,6 +60,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CORRUPTED_BLOCK_D);
                         //customs blocks
                         output.accept(ModBlocks.MUTATOR_BLOCK);
+                        output.accept(ModBlocks.MUTATOR_BLOCK_EVO);
                     })
                     .build());
 
