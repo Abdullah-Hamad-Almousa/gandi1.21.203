@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grindingandindustrialization:unformed_storm_lens": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:unformed_storm_lens"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "grindingandindustrialization:storm_wand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_grindingandindustrialization:unformed_storm_lens"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "grindingandindustrialization:storm_wand"
+    ]
+  }
+}

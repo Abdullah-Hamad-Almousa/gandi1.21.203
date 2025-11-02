@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "grindingandindustrialization:unformed_harmony_lens"
+      "item": "minecraft:spyglass"
     },
     "C": {
-      "item": "minecraft:spyglass"
+      "item": "grindingandindustrialization:unformed_harmony_lens"
     }
   },
   "pattern": [
     "   ",
-    " CB",
+    "BC ",
     "   "
   ],
   "result": {
-    "id": "grindingandindustrialization:harmony_wand",
-    "count": 1
+    "count": 1,
+    "id": "grindingandindustrialization:harmony_wand"
   }
 }

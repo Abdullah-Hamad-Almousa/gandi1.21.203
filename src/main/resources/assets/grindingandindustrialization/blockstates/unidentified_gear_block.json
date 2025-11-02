@@ -1,12 +1,7 @@
 {
-
   "variants": {
-
-      "": {
-        "model": "grindingandindustrialization:block/unidentified_gear_block"
-
-      }
-
+    "": {
+      "model": "grindingandindustrialization:block/unidentified_gear_block"
+    }
   }
-
 }

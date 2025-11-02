@@ -21,6 +21,18 @@
   "block.grindingandindustrialization.mutator_block": "Mutator block",
   "block.grindingandindustrialization.mutator_block_evo": "Mutator block EVO",
 
+  "block.grindingandindustrialization.inactive_door": "Inactive door",
+  "block.grindingandindustrialization.inactive_trapdoor": "Inactive trapdoor",
+
+  "block.grindingandindustrialization.inactive_fence": "Inactive fence",
+  "block.grindingandindustrialization.inactive_fence_gate": "Inactive gate",
+  "block.grindingandindustrialization.inactive_wall": "Inactive wall",
+
+  "block.grindingandindustrialization.inactive_pressure_plate": "Inactive pressure plate",
+  "block.grindingandindustrialization.inactive_button": "Inactive button",
+
+  "block.grindingandindustrialization.inactive_stairs": "Inactive stairs",
+
   "block.grindingandindustrialization.unformed_harmony_gear_block": "Unformed harmony gear block",
   "block.grindingandindustrialization.unformed_storm_gear_block": "Unformed storm gear block",
   "block.grindingandindustrialization.unformed_dawn_gear_block": "Unformed dawn gear block",

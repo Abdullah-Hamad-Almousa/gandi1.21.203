@@ -1,12 +1,7 @@
 {
-
   "variants": {
-
-      "": {
-        "model": "grindingandindustrialization:block/corrupted_block_a"
-
-      }
-
+    "": {
+      "model": "grindingandindustrialization:block/corrupted_block_a"
+    }
   }
-
 }

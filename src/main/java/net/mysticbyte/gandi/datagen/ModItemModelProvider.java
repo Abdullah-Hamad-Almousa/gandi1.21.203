@@ -1,0 +1,46 @@
+package net.mysticbyte.gandi.datagen;
+
+import net.minecraft.data.PackOutput;
+import net.mysticbyte.gandi.GandI;
+import net.mysticbyte.gandi.item.ModItems;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+
+public class ModItemModelProvider extends ItemModelProvider {
+
+    public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, GandI.MOD_ID, existingFileHelper);
+    }
+
+    @Override
+    protected void registerModels() {
+
+
+        //Level 2 gears
+        basicItem(ModItems.UNIDENTIFIED_GEAR.get());
+        basicItem(ModItems.INACTIVE_GEAR.get());
+        basicItem(ModItems.UNSTOPPABLE_GEAR.get());
+
+        //Level 1 gears
+        basicItem(ModItems.UNFORMED_DAWN_GEAR.get());
+        basicItem(ModItems.UNFORMED_STORM_GEAR.get());
+        basicItem(ModItems.UNFORMED_HARMONY_GEAR.get());
+        basicItem(ModItems.UNFORMED_RADIANCE_GEAR.get());
+
+        //Food
+        basicItem(ModItems.BREAD_UNSTOPPABLE.get());
+
+        //Lens
+        basicItem(ModItems.UNFORMED_DAWN_LENS.get());
+        basicItem(ModItems.UNFORMED_STORM_LENS.get());
+        basicItem(ModItems.UNFORMED_HARMONY_LENS.get());
+        basicItem(ModItems.UNFORMED_RADIANCE_LENS.get());
+
+        //WANDS
+        basicItem(ModItems.DAWN_WAND.get());
+        basicItem(ModItems.STORM_WAND.get());
+        basicItem(ModItems.HARMONY_WAND.get());
+        basicItem(ModItems.RADIANCE_WAND.get());
+
+    }
+}

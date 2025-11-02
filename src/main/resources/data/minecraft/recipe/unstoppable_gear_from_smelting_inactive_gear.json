@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20000,
+  "experience": 0.75,
+  "group": "unstoppable_gear",
+  "ingredient": {
+    "item": "grindingandindustrialization:inactive_gear"
+  },
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:unstoppable_gear"
+  }
+}

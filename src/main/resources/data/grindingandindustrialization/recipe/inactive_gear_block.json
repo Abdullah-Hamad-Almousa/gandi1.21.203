@@ -8,14 +8,13 @@
     "C": {
       "item": "minecraft:lightning_rod"
     }
-
   },
   "pattern": [
     "BCB",
     "BCB",
     "BCB"
   ],
-  "result":{
+  "result": {
     "count": 1,
     "id": "grindingandindustrialization:inactive_gear_block"
   }

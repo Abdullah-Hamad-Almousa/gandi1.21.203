@@ -1,9 +1,6 @@
 {
-
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "grindingandindustrialization:block/unformed_radiance_gear_block"
-
   }
-
 }

@@ -1,12 +1,7 @@
 {
-
   "variants": {
-
-      "": {
-        "model": "grindingandindustrialization:block/mutator_block"
-
-      }
-
+    "": {
+      "model": "grindingandindustrialization:block/mutator_block"
+    }
   }
-
 }

@@ -1,12 +1,7 @@
 {
-
   "variants": {
-
-      "": {
-        "model": "grindingandindustrialization:block/unformed_harmony_gear_block"
-
-      }
-
+    "": {
+      "model": "grindingandindustrialization:block/unformed_harmony_gear_block"
+    }
   }
-
 }

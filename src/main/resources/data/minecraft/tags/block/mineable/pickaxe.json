@@ -1,19 +1,14 @@
 {
-  "replace": false,
   "values": [
-    "grindingandindustrialization:corrupted_block_a",
-    "grindingandindustrialization:corrupted_block_c",
-    "grindingandindustrialization:corrupted_block_d",
-    "grindingandindustrialization:unidentified_gear_block",
-    "grindingandindustrialization:unstoppable_gear_block",
     "grindingandindustrialization:inactive_gear_block",
-    "grindingandindustrialization:unformed_dawn_gear_block",
-    "grindingandindustrialization:unformed_storm_gear_block",
-    "grindingandindustrialization:unformed_radiance_gear_block",
+    "grindingandindustrialization:unstoppable_gear_block",
+    "grindingandindustrialization:unidentified_gear_block",
     "grindingandindustrialization:unformed_harmony_gear_block",
-    "grindingandindustrialization:mutator_block",
-    "grindingandindustrialization:mutator_block_evo",
-    "grindingandindustrialization:corrupted_block_b"
+    "grindingandindustrialization:unformed_radiance_gear_block",
+    "grindingandindustrialization:unformed_storm_gear_block",
+    "grindingandindustrialization:unformed_dawn_gear_block",
+    "grindingandindustrialization:corrupted_block_a",
+    "grindingandindustrialization:corrupted_block_b",
+    "grindingandindustrialization:corrupted_block_c"
   ]
-
 }

@@ -6,10 +6,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.block.custom.MutatorBlock;
 import net.mysticbyte.gandi.item.ModItems;
@@ -37,6 +38,7 @@ public class ModBlocks{
     public static final DeferredBlock<Block> UNFORMED_STORM_GEAR_BLOCK = registerBlock(
             "unformed_storm_gear_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f, 20f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
     public static final DeferredBlock<Block> UNIDENTIFIED_GEAR_BLOCK = registerBlock(
             "unidentified_gear_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f, 36000000f).requiresCorrectToolForDrops()
@@ -61,6 +63,8 @@ public class ModBlocks{
     public static final DeferredBlock<Block> UNSTOPPABLE_GEAR_BLOCK = registerBlock(
             "unstoppable_gear_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+
 
     public static final DeferredBlock<Block> CORRUPTED_BLOCK_A = registerBlock(
             "corrupted_block_a", () -> new Block(BlockBehaviour.Properties.of()
@@ -135,9 +139,11 @@ public class ModBlocks{
                 }
             });
 
+
+
     public static final DeferredBlock<Block> MUTATOR_BLOCK = registerBlock("mutator_block",
             () -> new MutatorBlock(BlockBehaviour.Properties.of()
-                    .strength(4f, 36000000f).requiresCorrectToolForDrops()
+                    .strength(4f, 36000000f).noLootTable()
                     .sound(SoundType.ANCIENT_DEBRIS)){
 
                 @Override
@@ -157,7 +163,7 @@ public class ModBlocks{
 
     public static final DeferredBlock<Block> MUTATOR_BLOCK_EVO = registerBlock("mutator_block_evo",
             () -> new MutatorBlock(BlockBehaviour.Properties.of()
-                    .strength(4f, 36000000f).requiresCorrectToolForDrops()
+                    .strength(4f, 36000000f).noLootTable()
                     .sound(SoundType.ANCIENT_DEBRIS)){
 
                 @Override
@@ -174,6 +180,48 @@ public class ModBlocks{
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
+
+/*
+
+    public static final DeferredBlock<StairBlock> INACTIVE_STAIRS = registerBlock("inactive_stairs",
+            () -> new StairBlock(ModBlocks.INACTIVE_GEAR_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<SlabBlock> INACTIVE_SLABS = registerBlock("inactive_slabs",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<PressurePlateBlock> INACTIVE_PRESSURE_PLATE = registerBlock("inactive_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<ButtonBlock> INACTIVE_BUTTON = registerBlock("inactive_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 5,
+                    BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops().noCollission()));
+
+
+    public static final DeferredBlock<FenceBlock> INACTIVE_FENCE = registerBlock("inactive_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<FenceGateBlock> INACTIVE_FENCE_GATE = registerBlock("inactive_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA,BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallBlock> INACTIVE_WALL = registerBlock("inactive_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<DoorBlock> INACTIVE_DOOR = registerBlock("inactive_door",
+            () -> new DoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> INACTIVE_TRAPDOOR = registerBlock("inactive_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(4f, 36000000f)
+                            .requiresCorrectToolForDrops().noOcclusion()));
+
+*/
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

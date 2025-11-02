@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "grindingandindustrialization:unformed_dawn_gear"
+      "item": "minecraft:glass_pane"
     },
     "C": {
-      "item": "minecraft:glass_pane"
+      "item": "grindingandindustrialization:unformed_dawn_gear"
     }
   },
   "pattern": [
     "   ",
-    "CBC",
+    "BCB",
     "   "
   ],
   "result": {
-    "id": "grindingandindustrialization:unformed_dawn_lens",
-    "count": 1
+    "count": 1,
+    "id": "grindingandindustrialization:unformed_dawn_lens"
   }
 }
