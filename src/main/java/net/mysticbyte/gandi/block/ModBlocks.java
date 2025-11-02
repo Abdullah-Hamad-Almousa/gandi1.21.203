@@ -182,7 +182,7 @@ public class ModBlocks{
             });
 
 
-/*
+
 
     public static final DeferredBlock<StairBlock> INACTIVE_STAIRS = registerBlock("inactive_stairs",
             () -> new StairBlock(ModBlocks.INACTIVE_GEAR_BLOCK.get().defaultBlockState(),
@@ -197,7 +197,7 @@ public class ModBlocks{
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
                             .requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> INACTIVE_BUTTON = registerBlock("inactive_button",
-            () -> new ButtonBlock(BlockSetType.IRON, 5,
+            () -> new ButtonBlock(BlockSetType.IRON, 20,
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
                             .requiresCorrectToolForDrops().noCollission()));
 
@@ -221,7 +221,7 @@ public class ModBlocks{
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
                             .requiresCorrectToolForDrops().noOcclusion()));
 
-*/
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

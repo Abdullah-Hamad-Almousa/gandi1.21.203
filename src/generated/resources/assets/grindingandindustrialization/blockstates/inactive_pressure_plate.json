@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "grindingandindustrialization:block/inactive_pressure_plate"
+    },
+    "powered=true": {
+      "model": "grindingandindustrialization:block/inactive_pressure_plate_down"
+    }
+  }
+}

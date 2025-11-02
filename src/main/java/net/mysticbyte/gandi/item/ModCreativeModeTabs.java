@@ -59,7 +59,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CORRUPTED_BLOCK_C);
                         output.accept(ModBlocks.CORRUPTED_BLOCK_D);
                         //Fancy blocks
-                        /*
+
                         output.accept(ModBlocks.INACTIVE_STAIRS);
 
                         output.accept(ModBlocks.INACTIVE_DOOR);
@@ -70,7 +70,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.INACTIVE_WALL);
 
                         output.accept(ModBlocks.INACTIVE_BUTTON);
-                        output.accept(ModBlocks.INACTIVE_PRESSURE_PLATE);*/
+                        output.accept(ModBlocks.INACTIVE_PRESSURE_PLATE);
                         //customs blocks
                         output.accept(ModBlocks.MUTATOR_BLOCK);
                         output.accept(ModBlocks.MUTATOR_BLOCK_EVO);

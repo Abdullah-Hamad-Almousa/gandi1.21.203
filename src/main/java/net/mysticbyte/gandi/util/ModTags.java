@@ -12,17 +12,25 @@ public class ModTags {
 
     public static class Blocks {
 
+        public static final TagKey<Block> GEAR_BLOCKS = createTag("gear_blocks");
+
+        public static final TagKey<Block> MUTATOR_BLOCKS = createTag("mutator_blocks");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, name));
         }
     }
 
     public static class Items {
-        public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+
+        public static final TagKey<Item> GEARS = createTag("gears");
+        public static final TagKey<Item> LENS = createTag("lens");
+        public static final TagKey<Item> WANDS = createTag("wands");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, name));
         }
+
     }
 
 }

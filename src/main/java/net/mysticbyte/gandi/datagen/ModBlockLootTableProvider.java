@@ -47,6 +47,21 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.CORRUPTED_BLOCK_D.get(), ModItems.UNIDENTIFIED_GEAR.get()
                         , 1, 6));
 
+        dropSelf(ModBlocks.INACTIVE_STAIRS.get());
+        add(ModBlocks.INACTIVE_SLABS.get(),
+                block -> createSlabItemTable(ModBlocks.INACTIVE_SLABS.get()));
+
+        dropSelf(ModBlocks.INACTIVE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.INACTIVE_BUTTON.get());
+
+        dropSelf(ModBlocks.INACTIVE_FENCE.get());
+        dropSelf(ModBlocks.INACTIVE_FENCE_GATE.get());
+        dropSelf(ModBlocks.INACTIVE_WALL.get());
+        dropSelf(ModBlocks.INACTIVE_TRAPDOOR.get());
+
+        add(ModBlocks.INACTIVE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.INACTIVE_DOOR.get()));
+
     }
 
     // To drop items like copper when it mine

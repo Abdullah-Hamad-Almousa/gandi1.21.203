@@ -24,8 +24,27 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(ModItems.BREAD_UNSTOPPABLE.get());
+        tag(ModTags.Items.GEARS)
+                .add(ModItems.UNSTOPPABLE_GEAR.get())
+                .add(ModItems.INACTIVE_GEAR.get())
+                .add(ModItems.UNIDENTIFIED_GEAR.get())
+
+                .add(ModItems.UNFORMED_STORM_GEAR.get())
+                .add(ModItems.UNFORMED_HARMONY_GEAR.get())
+                .add(ModItems.UNFORMED_RADIANCE_GEAR.get())
+                .add(ModItems.UNFORMED_DAWN_GEAR.get());
+
+        tag(ModTags.Items.LENS)
+                .add(ModItems.UNFORMED_DAWN_LENS.get())
+                .add(ModItems.UNFORMED_STORM_LENS.get())
+                .add(ModItems.UNFORMED_HARMONY_LENS.get())
+                .add(ModItems.UNFORMED_RADIANCE_LENS.get());
+
+        tag(ModTags.Items.WANDS)
+                .add(ModItems.HARMONY_WAND.get())
+                .add(ModItems.DAWN_WAND.get())
+                .add(ModItems.STORM_WAND.get())
+                .add(ModItems.RADIANCE_WAND.get());
 
     }
 }

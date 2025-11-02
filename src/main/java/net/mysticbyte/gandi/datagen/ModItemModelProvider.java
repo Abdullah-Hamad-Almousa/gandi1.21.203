@@ -1,10 +1,14 @@
 package net.mysticbyte.gandi.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.mysticbyte.gandi.GandI;
+import net.mysticbyte.gandi.block.ModBlocks;
 import net.mysticbyte.gandi.item.ModItems;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModItemModelProvider extends ItemModelProvider {
 
@@ -42,5 +46,28 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.HARMONY_WAND.get());
         basicItem(ModItems.RADIANCE_WAND.get());
 
+        buttonItem(ModBlocks.INACTIVE_BUTTON, ModBlocks.INACTIVE_GEAR_BLOCK);
+        buttonItem(ModBlocks.INACTIVE_FENCE, ModBlocks.INACTIVE_GEAR_BLOCK);
+        buttonItem(ModBlocks.INACTIVE_WALL, ModBlocks.INACTIVE_GEAR_BLOCK);
+
+        basicItem(ModBlocks.INACTIVE_DOOR.asItem());
+    }
+
+    public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
     }
 }

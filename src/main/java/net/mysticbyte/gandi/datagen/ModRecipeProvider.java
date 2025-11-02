@@ -7,6 +7,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -157,6 +158,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 20000, "unstoppable_gear");
         oreBlasting(recipeOutput, ORE_SMELTING, RecipeCategory.MISC, ModItems.UNSTOPPABLE_GEAR, 0.75f,
                 10000, "unstoppable_gear");
+
+        stairBuilder(ModBlocks.INACTIVE_STAIRS.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK)).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INACTIVE_SLABS.get(),
+                ModBlocks.INACTIVE_GEAR_BLOCK.get());
+
+        buttonBuilder(ModBlocks.INACTIVE_BUTTON.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.INACTIVE_PRESSURE_PLATE.get(), ModBlocks.INACTIVE_GEAR_BLOCK.get());
+
+        fenceBuilder(ModBlocks.INACTIVE_FENCE.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.INACTIVE_FENCE_GATE.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
+
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INACTIVE_WALL.get(), ModBlocks.INACTIVE_GEAR_BLOCK.get());
+        doorBuilder(ModBlocks.INACTIVE_DOOR.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.INACTIVE_TRAPDOOR.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
+                .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
 
     }
 
