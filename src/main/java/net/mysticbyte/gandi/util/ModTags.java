@@ -16,6 +16,12 @@ public class ModTags {
 
         public static final TagKey<Block> MUTATOR_BLOCKS = createTag("mutator_blocks");
 
+        public static final TagKey<Block> NEEDS_INACTIVE_TOOL = createTag("needs_inactive_tool");
+        public static final TagKey<Block> INCORRECT_INACTIVE_TOOL = createTag("incorrect_inactive_tool");
+
+        public static final TagKey<Block> NEEDS_UNSTOPPABLE_TOOL = createTag("needs_unstoppable_tool");
+        public static final TagKey<Block> INCORRECT_UNSTOPPABLE_TOOL = createTag("incorrect_unstoppable_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, name));
         }

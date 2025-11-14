@@ -37,6 +37,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STORM_WAND);
                         output.accept(ModItems.HARMONY_WAND);
                         output.accept(ModItems.RADIANCE_WAND);
+                        //tools
+                        output.accept(ModItems.INACTIVE_SWORD);
+                        output.accept(ModItems.INACTIVE_SHOVEL);
+                        output.accept(ModItems.INACTIVE_AXE);
+                        output.accept(ModItems.INACTIVE_PICKAXE);
+                        output.accept(ModItems.INACTIVE_HOE);
                         //custom food
                         output.accept(ModItems.BREAD_UNSTOPPABLE);
                     })

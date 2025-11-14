@@ -19,7 +19,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
-
         //Level 2 gears
         basicItem(ModItems.UNIDENTIFIED_GEAR.get());
         basicItem(ModItems.INACTIVE_GEAR.get());
@@ -51,6 +50,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.INACTIVE_WALL, ModBlocks.INACTIVE_GEAR_BLOCK);
 
         basicItem(ModBlocks.INACTIVE_DOOR.asItem());
+
+        handheldItem(ModItems.INACTIVE_SWORD.asItem());
+        handheldItem(ModItems.INACTIVE_HOE.asItem());
+        handheldItem(ModItems.INACTIVE_AXE.asItem());
+        handheldItem(ModItems.INACTIVE_PICKAXE.asItem());
+        handheldItem(ModItems.INACTIVE_SHOVEL.asItem());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

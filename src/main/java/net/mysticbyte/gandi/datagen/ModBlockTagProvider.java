@@ -3,7 +3,6 @@ package net.mysticbyte.gandi.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.block.ModBlocks;
 import net.mysticbyte.gandi.util.ModTags;
@@ -48,19 +47,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
 
-                .add(ModBlocks.INACTIVE_GEAR_BLOCK.get())
-                .add(ModBlocks.UNSTOPPABLE_GEAR_BLOCK.get())
-                .add(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get())
-
                 .add(ModBlocks.MUTATOR_BLOCK_EVO.get())
                 .add(ModBlocks.MUTATOR_BLOCK.get())
 
                 .add(ModBlocks.CORRUPTED_BLOCK_A.get())
                 .add(ModBlocks.CORRUPTED_BLOCK_B.get())
                 .add(ModBlocks.CORRUPTED_BLOCK_C.get())
-                .add(ModBlocks.CORRUPTED_BLOCK_D.get());
-
-        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.CORRUPTED_BLOCK_D.get())
 
                 .add(ModBlocks.UNFORMED_HARMONY_GEAR_BLOCK.get())
                 .add(ModBlocks.UNFORMED_RADIANCE_GEAR_BLOCK.get())
@@ -86,5 +79,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS).add(ModBlocks.INACTIVE_WALL.get());
         tag(BlockTags.FENCES).add(ModBlocks.INACTIVE_FENCE.get());
 
+        tag(ModTags.Blocks.NEEDS_INACTIVE_TOOL)
+                .add(ModBlocks.INACTIVE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNSTOPPABLE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get());
+
+        tag(ModTags.Blocks.INCORRECT_INACTIVE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_INACTIVE_TOOL);
+        tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .add(ModBlocks.INACTIVE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNSTOPPABLE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get());
+        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .add(ModBlocks.INACTIVE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNSTOPPABLE_GEAR_BLOCK.get())
+                .add(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get());
     }
 }

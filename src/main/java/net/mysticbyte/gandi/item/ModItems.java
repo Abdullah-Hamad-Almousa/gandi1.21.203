@@ -2,9 +2,7 @@ package net.mysticbyte.gandi.item;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.item.custom.*;
 import net.neoforged.bus.api.IEventBus;
@@ -39,6 +37,7 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             } );
+
     public static final DeferredItem<Item> UNFORMED_STORM_GEAR = ITEMS.register("unformed_storm_gear",
             () -> new Item(new Item.Properties()) );
     public static final DeferredItem<Item> UNFORMED_DAWN_GEAR = ITEMS.register("unformed_dawn_gear",
@@ -63,6 +62,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()) );
     public static final DeferredItem<Item> UNFORMED_HARMONY_GEAR = ITEMS.register("unformed_harmony_gear",
             () -> new Item(new Item.Properties()) );
+
     public static final DeferredItem<Item> UNFORMED_HARMONY_LENS = ITEMS.register("unformed_harmony_lens",
             () -> new Item(new Item.Properties()) );
     public static final DeferredItem<Item> UNFORMED_STORM_LENS = ITEMS.register("unformed_storm_lens",
@@ -144,6 +144,23 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
+    public static final DeferredItem<SwordItem> INACTIVE_SWORD = ITEMS.register("inactive_sword",
+            () -> new SwordItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTier.INACTIVE, 13, -1.3f))));
+    public static final DeferredItem<PickaxeItem> INACTIVE_PICKAXE = ITEMS.register("inactive_pickaxe",
+            () -> new PickaxeItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.INACTIVE, 7, -3f))));
+    public static final DeferredItem<ShovelItem> INACTIVE_SHOVEL = ITEMS.register("inactive_shovel",
+            () -> new ShovelItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTier.INACTIVE, 7, -1.3f))));
+    public static final DeferredItem<AxeItem> INACTIVE_AXE = ITEMS.register("inactive_axe",
+            () -> new AxeItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTier.INACTIVE, 17, -3f))));
+    public static final DeferredItem<HoeItem> INACTIVE_HOE = ITEMS.register("inactive_hoe",
+            () -> new HoeItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTier.INACTIVE, 7, -0.3f))));
+
 
     public static final DeferredItem<Item> BREAD_UNSTOPPABLE = ITEMS.register("bread_unstoppable",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BREAD_UNSTOPPABLE))

@@ -4,6 +4,7 @@ package net.mysticbyte.gandi.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.item.ModItems;
@@ -45,6 +46,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.DAWN_WAND.get())
                 .add(ModItems.STORM_WAND.get())
                 .add(ModItems.RADIANCE_WAND.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.INACTIVE_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.INACTIVE_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.INACTIVE_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.INACTIVE_HOE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.INACTIVE_AXE.get());
 
     }
 }

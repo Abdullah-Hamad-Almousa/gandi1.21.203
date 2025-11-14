@@ -16,6 +16,12 @@
   "item.grindingandindustrialization.harmony_wand": "Harmony wand",
   "item.grindingandindustrialization.radiance_wand": "Radiance wand",
 
+  "item.grindingandindustrialization.inactive_sword": "Inactive Sword",
+  "item.grindingandindustrialization.inactive_hoe": "Inactive Hoe",
+  "item.grindingandindustrialization.inactive_axe": "Inactive Axe",
+  "item.grindingandindustrialization.inactive_pickaxe": "Inactive Pickaxe",
+  "item.grindingandindustrialization.inactive_shovel": "Inactive Shovel",
+
   "item.grindingandindustrialization.bread_unstoppable": "Unstoppable bread",
 
   "block.grindingandindustrialization.mutator_block": "Mutator block",
