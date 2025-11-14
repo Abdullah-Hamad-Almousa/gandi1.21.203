@@ -47,8 +47,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RADIANCE_WAND.get());
 
         buttonItem(ModBlocks.INACTIVE_BUTTON, ModBlocks.INACTIVE_GEAR_BLOCK);
-        buttonItem(ModBlocks.INACTIVE_FENCE, ModBlocks.INACTIVE_GEAR_BLOCK);
-        buttonItem(ModBlocks.INACTIVE_WALL, ModBlocks.INACTIVE_GEAR_BLOCK);
+        fenceItem(ModBlocks.INACTIVE_FENCE, ModBlocks.INACTIVE_GEAR_BLOCK);
+        wallItem(ModBlocks.INACTIVE_WALL, ModBlocks.INACTIVE_GEAR_BLOCK);
 
         basicItem(ModBlocks.INACTIVE_DOOR.asItem());
     }

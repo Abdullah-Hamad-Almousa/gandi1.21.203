@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/fence_post",
   "textures": {
-    "texture": "grindingandindustrialization:block/inactive_gear_block"
+    "texture": "grindingandindustrialization:block/inactive_gear_ii"
   }
 }

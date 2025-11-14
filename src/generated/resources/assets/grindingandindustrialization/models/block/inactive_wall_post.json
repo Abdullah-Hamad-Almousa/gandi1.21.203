@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_post",
   "textures": {
-    "wall": "grindingandindustrialization:block/inactive_gear_block"
+    "wall": "grindingandindustrialization:block/inactive_gear_ii"
   }
 }

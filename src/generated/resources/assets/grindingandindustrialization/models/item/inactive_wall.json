@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/button_inventory",
+  "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "texture": "grindingandindustrialization:block/inactive_gear_block"
+    "wall": "grindingandindustrialization:block/inactive_gear_block"
   }
 }

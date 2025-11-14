@@ -1,9 +1,12 @@
 package net.mysticbyte.gandi.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.block.ModBlocks;
+import net.mysticbyte.gandi.block.custom.InactiveLampBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -34,16 +37,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.UNFORMED_HARMONY_GEAR_BLOCK);
         blockWithItem(ModBlocks.UNFORMED_RADIANCE_GEAR_BLOCK);
 
-        stairsBlock(ModBlocks.INACTIVE_STAIRS.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
+        stairsBlock(ModBlocks.INACTIVE_STAIRS.get(), modLoc("block/inactive_gear_ii"));
         slabBlock(ModBlocks.INACTIVE_SLABS.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()),
                 blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
 
-        buttonBlock(ModBlocks.INACTIVE_BUTTON.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
+        buttonBlock(ModBlocks.INACTIVE_BUTTON.get(), modLoc("block/inactive_gear_ii"));
         pressurePlateBlock(ModBlocks.INACTIVE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
 
-        fenceBlock(ModBlocks.INACTIVE_FENCE.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
-        fenceGateBlock(ModBlocks.INACTIVE_FENCE_GATE.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
-        wallBlock(ModBlocks.INACTIVE_WALL.get(), blockTexture(ModBlocks.INACTIVE_GEAR_BLOCK.get()));
+        fenceBlock(ModBlocks.INACTIVE_FENCE.get(), modLoc("block/inactive_gear_ii"));
+        fenceGateBlock(ModBlocks.INACTIVE_FENCE_GATE.get(), modLoc("block/inactive_gear_ii"));
+        wallBlock(ModBlocks.INACTIVE_WALL.get(), modLoc("block/inactive_gear_ii"));
 
         doorBlockWithRenderType(ModBlocks.INACTIVE_DOOR.get(), modLoc("block/inactive_door_bottom"),
                 modLoc("block/inactive_door_top"), "cutout");
@@ -55,8 +58,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.INACTIVE_FENCE_GATE);
         blockItem(ModBlocks.INACTIVE_PRESSURE_PLATE);
         blockItem(ModBlocks.INACTIVE_TRAPDOOR, "_bottom");
+
+        customLamp();
     }
 
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.INACTIVE_LAMP.get()).forAllStates(state -> {
+            if (state.getValue(InactiveLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("inactive_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, "block/" + "inactive_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("inactive_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, "block/" + "inactive_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.INACTIVE_LAMP.get(), models().cubeAll("inactive_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(GandI.MOD_ID, "block/" + "inactive_lamp_on")));
+
+    }
     private void blockWithItem(DeferredBlock<?> deferredBlock){
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }

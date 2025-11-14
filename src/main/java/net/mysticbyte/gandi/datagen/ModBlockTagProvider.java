@@ -3,6 +3,7 @@ package net.mysticbyte.gandi.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.block.ModBlocks;
 import net.mysticbyte.gandi.util.ModTags;
@@ -31,9 +32,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.UNFORMED_STORM_GEAR_BLOCK.get())
                 .add(ModBlocks.UNFORMED_DAWN_GEAR_BLOCK.get())
 
+                .add(ModBlocks.INACTIVE_DOOR.get())
+                .add(ModBlocks.INACTIVE_STAIRS.get())
+                .add(ModBlocks.INACTIVE_BUTTON.get())
+                .add(ModBlocks.INACTIVE_SLABS.get())
+                .add(ModBlocks.INACTIVE_TRAPDOOR.get())
+                .add(ModBlocks.INACTIVE_PRESSURE_PLATE.get())
+                .add(ModBlocks.INACTIVE_FENCE.get())
+
                 .add(ModBlocks.CORRUPTED_BLOCK_A.get())
                 .add(ModBlocks.CORRUPTED_BLOCK_B.get())
-                .add(ModBlocks.CORRUPTED_BLOCK_C.get());
+                .add(ModBlocks.CORRUPTED_BLOCK_C.get())
+                .add(ModBlocks.CORRUPTED_BLOCK_D.get());
+
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
 
@@ -46,7 +57,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 .add(ModBlocks.CORRUPTED_BLOCK_A.get())
                 .add(ModBlocks.CORRUPTED_BLOCK_B.get())
-                .add(ModBlocks.CORRUPTED_BLOCK_C.get());
+                .add(ModBlocks.CORRUPTED_BLOCK_C.get())
+                .add(ModBlocks.CORRUPTED_BLOCK_D.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
 
@@ -70,9 +82,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MUTATOR_BLOCK.get())
                 .add(ModBlocks.MUTATOR_BLOCK_EVO.get());
 
-        tag(BlockTags.FENCES).add(ModBlocks.INACTIVE_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.INACTIVE_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.INACTIVE_WALL.get());
+        tag(BlockTags.FENCES).add(ModBlocks.INACTIVE_FENCE.get());
 
     }
 }

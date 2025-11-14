@@ -1,6 +1,7 @@
 package net.mysticbyte.gandi;
 
 import net.mysticbyte.gandi.block.ModBlocks;
+import net.mysticbyte.gandi.component.ModDataComponents;
 import net.mysticbyte.gandi.item.ModCreativeModeTabs;
 import net.mysticbyte.gandi.item.ModItems;
 import org.slf4j.Logger;
@@ -39,6 +40,8 @@ public class GandI {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

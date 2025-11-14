@@ -31,6 +31,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.INACTIVE_GEAR_BLOCK.get());
         dropSelf(ModBlocks.UNSTOPPABLE_GEAR_BLOCK.get());
+        dropSelf(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get());
 
         dropSelf(ModBlocks.UNFORMED_HARMONY_GEAR_BLOCK.get());
         dropSelf(ModBlocks.UNFORMED_RADIANCE_GEAR_BLOCK.get());
@@ -40,8 +41,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CORRUPTED_BLOCK_A.get());
         dropSelf(ModBlocks.CORRUPTED_BLOCK_B.get());
         dropSelf(ModBlocks.CORRUPTED_BLOCK_C.get());
-
-        dropSelf(ModBlocks.UNIDENTIFIED_GEAR_BLOCK.get());
 
         add(ModBlocks.CORRUPTED_BLOCK_D.get(),
                 block -> createMultipleOreDrops(ModBlocks.CORRUPTED_BLOCK_D.get(), ModItems.UNIDENTIFIED_GEAR.get()
@@ -61,6 +60,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.INACTIVE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.INACTIVE_DOOR.get()));
+
+        dropSelf(ModBlocks.INACTIVE_LAMP.get());
 
     }
 

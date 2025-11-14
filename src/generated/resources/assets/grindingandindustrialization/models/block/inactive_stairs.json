@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/stairs",
   "textures": {
-    "bottom": "grindingandindustrialization:block/inactive_gear_block",
-    "side": "grindingandindustrialization:block/inactive_gear_block",
-    "top": "grindingandindustrialization:block/inactive_gear_block"
+    "bottom": "grindingandindustrialization:block/inactive_gear_ii",
+    "side": "grindingandindustrialization:block/inactive_gear_ii",
+    "top": "grindingandindustrialization:block/inactive_gear_ii"
   }
 }

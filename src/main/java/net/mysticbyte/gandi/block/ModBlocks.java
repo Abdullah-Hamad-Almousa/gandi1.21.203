@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.mysticbyte.gandi.GandI;
+import net.mysticbyte.gandi.block.custom.InactiveLampBlock;
 import net.mysticbyte.gandi.block.custom.MutatorBlock;
 import net.mysticbyte.gandi.item.ModItems;
 
@@ -220,6 +221,11 @@ public class ModBlocks{
             () -> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
                             .requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final DeferredBlock<Block> INACTIVE_LAMP = registerBlock("inactive_lamp",
+            () -> new InactiveLampBlock(BlockBehaviour.Properties.of().strength(2f, 36000000f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(InactiveLampBlock
+                            .CLICKED) ? 15 : 0)));
 
 
 

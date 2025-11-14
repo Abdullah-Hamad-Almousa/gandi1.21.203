@@ -1,9 +1,9 @@
-// 1.21.1	2025-11-02T12:47:48.0043045	Tags for minecraft:block mod id grindingandindustrialization
+// 1.21.1	2025-11-07T01:33:16.9856066	Tags for minecraft:block mod id grindingandindustrialization
 0d4ab2db9d8ff9c759fe662aef85ff0e543e3a91 data/grindingandindustrialization/tags/block/gear_blocks.json
 9dfe2222868f509627fbe3fc16fc47adb382ea4e data/grindingandindustrialization/tags/block/mutator_blocks.json
 0f2bd75406d658fe20f5f51c8b03796015597068 data/minecraft/tags/block/fences.json
 109cd1271555dad6230ca2128015cad84dd8bd65 data/minecraft/tags/block/fence_gates.json
-75780206670f487ca0079fcfff00aad0a4493b12 data/minecraft/tags/block/mineable/pickaxe.json
-fbac21faf2e19ae0ebc4372e1ddf36b02fa3452e data/minecraft/tags/block/needs_diamond_tool.json
+41f1ac48b14a3141924a4b3d2e1c825d848adeaf data/minecraft/tags/block/mineable/pickaxe.json
+2d6fa1b81a1d948daf62dce8c3c82cb40c56804b data/minecraft/tags/block/needs_diamond_tool.json
 527c2f510783d7855380612e18de969b573dc63b data/minecraft/tags/block/needs_iron_tool.json
 de8b9f7614064b4afe2639e824606a97159ead3a data/minecraft/tags/block/walls.json

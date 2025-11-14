@@ -74,6 +74,8 @@ public class ModCreativeModeTabs {
                         //customs blocks
                         output.accept(ModBlocks.MUTATOR_BLOCK);
                         output.accept(ModBlocks.MUTATOR_BLOCK_EVO);
+
+                        output.accept(ModBlocks.INACTIVE_LAMP);
                     })
                     .build());
 
