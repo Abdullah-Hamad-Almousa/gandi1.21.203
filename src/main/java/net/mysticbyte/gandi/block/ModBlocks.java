@@ -65,8 +65,6 @@ public class ModBlocks{
             "unstoppable_gear_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f, 36000000f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
-
-
     public static final DeferredBlock<Block> CORRUPTED_BLOCK_A = registerBlock(
             "corrupted_block_a", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f, 36000000f).requiresCorrectToolForDrops()
@@ -140,8 +138,6 @@ public class ModBlocks{
                 }
             });
 
-
-
     public static final DeferredBlock<Block> MUTATOR_BLOCK = registerBlock("mutator_block",
             () -> new MutatorBlock(BlockBehaviour.Properties.of()
                     .strength(4f, 36000000f).noLootTable()
@@ -182,9 +178,6 @@ public class ModBlocks{
                 }
             });
 
-
-
-
     public static final DeferredBlock<StairBlock> INACTIVE_STAIRS = registerBlock("inactive_stairs",
             () -> new StairBlock(ModBlocks.INACTIVE_GEAR_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
@@ -201,7 +194,6 @@ public class ModBlocks{
             () -> new ButtonBlock(BlockSetType.IRON, 20,
                     BlockBehaviour.Properties.of().strength(4f, 36000000f)
                             .requiresCorrectToolForDrops().noCollission()));
-
 
     public static final DeferredBlock<FenceBlock> INACTIVE_FENCE = registerBlock("inactive_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of().strength(4f, 36000000f)
@@ -227,16 +219,14 @@ public class ModBlocks{
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(InactiveLampBlock
                             .CLICKED) ? 15 : 0)));
 
-
-
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
+        registerBlockItem(name, toReturn);//
         return toReturn;
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));//
     }
 
     public static void register(IEventBus eventBus){
