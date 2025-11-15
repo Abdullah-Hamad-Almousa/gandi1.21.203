@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unidentified_gear"
+    },
+    "C": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "BCB",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:unidentified_gear_block"
+  }
+}

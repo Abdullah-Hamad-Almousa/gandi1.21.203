@@ -1,0 +1,22 @@
+{
+  "values": [
+    "grindingandindustrialization:inactive_gear_block",
+    "grindingandindustrialization:unstoppable_gear_block",
+    "grindingandindustrialization:unidentified_gear_block",
+    "grindingandindustrialization:unformed_harmony_gear_block",
+    "grindingandindustrialization:unformed_radiance_gear_block",
+    "grindingandindustrialization:unformed_storm_gear_block",
+    "grindingandindustrialization:unformed_dawn_gear_block",
+    "grindingandindustrialization:inactive_door",
+    "grindingandindustrialization:inactive_stairs",
+    "grindingandindustrialization:inactive_button",
+    "grindingandindustrialization:inactive_slabs",
+    "grindingandindustrialization:inactive_trapdoor",
+    "grindingandindustrialization:inactive_pressure_plate",
+    "grindingandindustrialization:inactive_fence",
+    "grindingandindustrialization:corrupted_block_a",
+    "grindingandindustrialization:corrupted_block_b",
+    "grindingandindustrialization:corrupted_block_c",
+    "grindingandindustrialization:corrupted_block_d"
+  ]
+}

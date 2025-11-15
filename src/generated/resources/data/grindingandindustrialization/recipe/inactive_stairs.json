@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "inactive",
+  "key": {
+    "#": {
+      "item": "grindingandindustrialization:inactive_gear_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "grindingandindustrialization:inactive_stairs"
+  }
+}

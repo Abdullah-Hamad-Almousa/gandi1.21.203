@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_block{grindingandindustrialization:unidentified_gear_block}": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:unidentified_gear_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "grindingandindustrialization:unidentified_gear_from_unidentified_gear_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_block{grindingandindustrialization:unidentified_gear_block}"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "grindingandindustrialization:unidentified_gear_from_unidentified_gear_block"
+    ]
+  }
+}

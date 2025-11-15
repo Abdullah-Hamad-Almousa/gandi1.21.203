@@ -1,0 +1,12 @@
+// 1.21.1	2025-11-15T05:26:23.603169	Tags for minecraft:block mod id grindingandindustrialization
+0d4ab2db9d8ff9c759fe662aef85ff0e543e3a91 data/grindingandindustrialization/tags/block/gear_blocks.json
+e319798a2f923e981d086c039aac880604f6a70c data/grindingandindustrialization/tags/block/incorrect_inactive_tool.json
+9dfe2222868f509627fbe3fc16fc47adb382ea4e data/grindingandindustrialization/tags/block/mutator_blocks.json
+5732941d8045f9ac17772efe386cd0af8155f458 data/grindingandindustrialization/tags/block/needs_inactive_tool.json
+0f2bd75406d658fe20f5f51c8b03796015597068 data/minecraft/tags/block/fences.json
+109cd1271555dad6230ca2128015cad84dd8bd65 data/minecraft/tags/block/fence_gates.json
+5732941d8045f9ac17772efe386cd0af8155f458 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+5732941d8045f9ac17772efe386cd0af8155f458 data/minecraft/tags/block/incorrect_for_netherite_tool.json
+41f1ac48b14a3141924a4b3d2e1c825d848adeaf data/minecraft/tags/block/mineable/pickaxe.json
+54bcb8ffb50af6375d21f273742ebe788403d60d data/minecraft/tags/block/needs_diamond_tool.json
+de8b9f7614064b4afe2639e824606a97159ead3a data/minecraft/tags/block/walls.json

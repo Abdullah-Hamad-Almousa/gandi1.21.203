@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:spyglass"
+    },
+    "C": {
+      "item": "grindingandindustrialization:unformed_storm_lens"
+    }
+  },
+  "pattern": [
+    "   ",
+    "BC ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:storm_wand"
+  }
+}

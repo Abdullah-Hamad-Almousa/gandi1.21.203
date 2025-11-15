@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "grindingandindustrialization:block/inactive_gear_block"
+  }
+}
