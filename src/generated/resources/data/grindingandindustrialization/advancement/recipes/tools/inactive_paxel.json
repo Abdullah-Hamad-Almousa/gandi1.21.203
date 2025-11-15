@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inactive_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:inactive_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_inactive_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:inactive_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_inactive_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:inactive_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "grindingandindustrialization:inactive_paxel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_inactive_axe",
+      "has_inactive_shovel",
+      "has_inactive_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "grindingandindustrialization:inactive_paxel"
+    ]
+  }
+}

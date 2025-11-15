@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:inactive_axe"
+    },
+    "C": {
+      "item": "grindingandindustrialization:inactive_pickaxe"
+    },
+    "D": {
+      "item": "grindingandindustrialization:inactive_shovel"
+    },
+    "E": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    "BCD",
+    " E ",
+    " E "
+  ],
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:inactive_paxel"
+  }
+}

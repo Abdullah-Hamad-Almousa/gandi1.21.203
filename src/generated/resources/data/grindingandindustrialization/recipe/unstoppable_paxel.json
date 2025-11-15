@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "grindingandindustrialization:unstoppable_axe"
+    },
+    "C": {
+      "item": "grindingandindustrialization:unstoppable_pickaxe"
+    },
+    "D": {
+      "item": "grindingandindustrialization:unstoppable_shovel"
+    },
+    "E": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    "BCD",
+    " E ",
+    " E "
+  ],
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:unstoppable_paxel"
+  }
+}

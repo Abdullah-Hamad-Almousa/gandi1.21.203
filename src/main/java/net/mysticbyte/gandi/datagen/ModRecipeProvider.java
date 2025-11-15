@@ -1,13 +1,14 @@
 package net.mysticbyte.gandi.datagen;
 
 import com.mojang.datafixers.util.Pair;
+import net.minecraft.advancements.Criterion;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -15,11 +16,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.mysticbyte.gandi.block.ModBlocks;
 import net.mysticbyte.gandi.item.ModItems;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
-import org.antlr.v4.runtime.misc.Triple;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
+import java.util.regex.Pattern;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -258,46 +259,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         }
 
-//        List<String> TIERS = List.of("inactive", "unstoppable");
-//
-//        for (var tier : TIERS) {
-//            Item pickaxeItem = null;
-//            try {
-//                pickaxeItem = (Item) ModItems.class.getField(tier.toUpperCase() + "_PICKAXE").get(tier);
-//            } catch (IllegalAccessException | NoSuchFieldException e) {
-//                throw new RuntimeException(e);
-//            }
-//            Item shovelItem = null;
-//            try {
-//                shovelItem = (Item) ModItems.class.getField(tier.toUpperCase() + "_SHOVEL").get(tier);
-//            } catch (IllegalAccessException | NoSuchFieldException e) {
-//                throw new RuntimeException(e);
-//            }
-//            Item axeItem = null;
-//            try {
-//                axeItem = (Item) ModItems.class.getField(tier.toUpperCase() + "_AXE").get(tier);
-//            } catch (IllegalAccessException | NoSuchFieldException e) {
-//                throw new RuntimeException(e);
-//            }
-//            Item paxelItem = null;
-//            try {
-//                paxelItem = (Item) ModItems.class.getField(tier.toUpperCase() + "_PAXEL").get(tier);
-//            } catch (IllegalAccessException | NoSuchFieldException e) {
-//                throw new RuntimeException(e);
-//            }
-//
-//            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, paxelItem)
-//                    .pattern("BCD")
-//                    .pattern(" E ")
-//                    .pattern(" E ")
-//                    .define('B', pickaxeItem)
-//                    .define('C', shovelItem)
-//                    .define('D', axeItem)
-//                    .define('E', Items.LIGHTNING_ROD)
-//                    .unlockedBy("has_" + BuiltInRegistries.ITEM.getKey(pickaxeItem), has(pickaxeItem))
-//                    .save(recipeOutput);
-//        }
-
         List<ItemLike> ORE_SMELTING = List.of(ModItems.INACTIVE_GEAR);
 
         oreSmelting(recipeOutput, ORE_SMELTING, RecipeCategory.MISC, ModItems.UNSTOPPABLE_GEAR, 0.75f,
@@ -326,6 +287,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.INACTIVE_TRAPDOOR.get(), Ingredient.of(ModBlocks.INACTIVE_GEAR_BLOCK.get())).group("inactive")
                 .unlockedBy("has_inactive_gear_block", has(ModBlocks.INACTIVE_GEAR_BLOCK)).save(recipeOutput);
 
+        paxelRecipeHelper(ModItems.INACTIVE_AXE.get(), ModItems.INACTIVE_PICKAXE.get(),
+                ModItems.INACTIVE_SHOVEL.get(), ModItems.INACTIVE_PAXEL.get()).save(recipeOutput);
+        paxelRecipeHelper(ModItems.UNSTOPPABLE_AXE.get(), ModItems.UNSTOPPABLE_PICKAXE.get(),
+                ModItems.UNSTOPPABLE_SHOVEL.get(), ModItems.UNSTOPPABLE_PAXEL.get()).save(recipeOutput);
+
+    }
+
+    private String stripNamespace(String itemString){
+        Pattern pattern = Pattern.compile("(.+):(.+)");
+        var matchs = pattern.matcher(itemString);
+        if (matchs.find()){
+            return matchs.group(2);
+        }
+        return "";
+    }
+
+    private Criterion<InventoryChangeTrigger.TriggerInstance> hasInInventory(ItemLike item){
+        return inventoryTrigger(ItemPredicate.Builder.item().of(item).build());
+    }
+
+    private String hasInInventoryCriterionName(ItemLike item){
+        String itemName = item.asItem().toString();
+        return "has_".concat(stripNamespace(itemName));
+    }
+
+    private ShapedRecipeBuilder paxelRecipeHelper(Item axe, Item pickaxe, Item shovel, Item output){
+        return ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, output)
+                .pattern("BCD")
+                .pattern(" E ")
+                .pattern(" E ")
+                .define('B', axe)
+                .define('C', pickaxe)
+                .define('D', shovel)
+                .define('E', Items.LIGHTNING_ROD)
+                .unlockedBy(hasInInventoryCriterionName(axe), hasInInventory(axe))
+                .unlockedBy(hasInInventoryCriterionName(shovel), hasInInventory(shovel))
+                .unlockedBy(hasInInventoryCriterionName(pickaxe), hasInInventory(pickaxe));
     }
 
 }

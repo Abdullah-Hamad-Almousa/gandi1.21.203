@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "grindingandindustrialization:unstoppable_paxel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_unstoppable_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:unstoppable_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_unstoppable_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:unstoppable_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_unstoppable_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "grindingandindustrialization:unstoppable_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_unstoppable_axe",
+      "has_unstoppable_shovel",
+      "has_unstoppable_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "grindingandindustrialization:unstoppable_paxel"
+    ]
+  }
+}
