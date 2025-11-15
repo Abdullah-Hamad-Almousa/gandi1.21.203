@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:lightning_rod"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "D": {
+      "item": "grindingandindustrialization:unstoppable_gear"
+    }
+  },
+  "pattern": [
+    " C ",
+    " D ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "grindingandindustrialization:unstoppable_sword"
+  }
+}

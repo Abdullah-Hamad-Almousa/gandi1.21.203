@@ -57,6 +57,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.INACTIVE_PICKAXE.asItem());
         handheldItem(ModItems.INACTIVE_SHOVEL.asItem());
         handheldItem(ModItems.INACTIVE_PAXEL.asItem());
+
+        handheldItem(ModItems.UNSTOPPABLE_SWORD.asItem());
+        handheldItem(ModItems.UNSTOPPABLE_HOE.asItem());
+        handheldItem(ModItems.UNSTOPPABLE_AXE.asItem());
+        handheldItem(ModItems.UNSTOPPABLE_PICKAXE.asItem());
+        handheldItem(ModItems.UNSTOPPABLE_SHOVEL.asItem());
+        handheldItem(ModItems.UNSTOPPABLE_PAXEL.asItem());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

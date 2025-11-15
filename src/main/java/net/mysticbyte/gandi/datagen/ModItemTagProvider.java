@@ -66,5 +66,23 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.PICKAXES)
                 .add(ModItems.INACTIVE_PAXEL.get());
 
+        tag(ItemTags.SWORDS)
+                .add(ModItems.UNSTOPPABLE_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.UNSTOPPABLE_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.UNSTOPPABLE_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.UNSTOPPABLE_HOE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.UNSTOPPABLE_AXE.get());
+
+        tag(ItemTags.AXES)
+                .add(ModItems.UNSTOPPABLE_PAXEL.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.UNSTOPPABLE_PAXEL.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.UNSTOPPABLE_PAXEL.get());
+
     }
 }

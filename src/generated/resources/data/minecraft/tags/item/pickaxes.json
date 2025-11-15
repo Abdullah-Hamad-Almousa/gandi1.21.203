@@ -1,6 +1,8 @@
 {
   "values": [
     "grindingandindustrialization:inactive_pickaxe",
-    "grindingandindustrialization:inactive_paxel"
+    "grindingandindustrialization:inactive_paxel",
+    "grindingandindustrialization:unstoppable_pickaxe",
+    "grindingandindustrialization:unstoppable_paxel"
   ]
 }

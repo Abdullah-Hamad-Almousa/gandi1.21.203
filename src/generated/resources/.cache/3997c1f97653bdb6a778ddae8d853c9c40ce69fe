@@ -1,9 +1,9 @@
-// 1.21.1	2025-11-15T05:26:23.5980296	Tags for minecraft:item mod id grindingandindustrialization
+// 1.21.1	2025-11-15T09:27:06.5130086	Tags for minecraft:item mod id grindingandindustrialization
 be4fd6cf52581cba9edea5d8350965928431de1f data/grindingandindustrialization/tags/item/gears.json
 2d133a076c1ce6ecda15e8edaa451c0423813706 data/grindingandindustrialization/tags/item/lens.json
 31f9b94806c6a2adb3d34413a637623646ab5b49 data/grindingandindustrialization/tags/item/wands.json
-1422b903b7c7cc2b9f3310b323e7a53824f0fc3a data/minecraft/tags/item/axes.json
-ae08cedf29fe5012b5a0cf08330688c3c158087f data/minecraft/tags/item/hoes.json
-cbe31bafe91a65090b89e1dc503e9b16865240af data/minecraft/tags/item/pickaxes.json
-f538235bae9f848215963581fa56ef17bd71c783 data/minecraft/tags/item/shovels.json
-9c0ed53c2317074316b51aa7a6c6cff8dd2d8dbe data/minecraft/tags/item/swords.json
+dfc7a4adb7dc48a90fe54c4682739c2e8223b99c data/minecraft/tags/item/axes.json
+b4f8edf687738b26c64e68e919d354fcdbe6952e data/minecraft/tags/item/hoes.json
+4adbbf7841f537db482b167872f134d39b85d6cb data/minecraft/tags/item/pickaxes.json
+81b7e17d4cfce469476d5b71291a8f64a9281981 data/minecraft/tags/item/shovels.json
+b5e36066ddc5f917bbf0785eec956653b61fbaa6 data/minecraft/tags/item/swords.json

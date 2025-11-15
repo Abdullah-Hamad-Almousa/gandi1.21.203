@@ -161,9 +161,28 @@ public class ModItems {
             () -> new HoeItem(ModToolTier.INACTIVE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTier.INACTIVE, 7, -0.3f))));
 
+    public static final DeferredItem<HoeItem> UNSTOPPABLE_HOE = ITEMS.register("unstoppable_hoe",
+            () -> new HoeItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTier.UNSTOPPABLE, 7, -0.3f))));
+    public static final DeferredItem<SwordItem> UNSTOPPABLE_SWORD = ITEMS.register("unstoppable_sword",
+            () -> new SwordItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTier.UNSTOPPABLE, 13, -1.3f))));
+    public static final DeferredItem<PickaxeItem> UNSTOPPABLE_PICKAXE = ITEMS.register("unstoppable_pickaxe",
+            () -> new PickaxeItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.UNSTOPPABLE, 7, -3f))));
+    public static final DeferredItem<ShovelItem> UNSTOPPABLE_SHOVEL = ITEMS.register("unstoppable_shovel",
+            () -> new ShovelItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTier.UNSTOPPABLE, 7, -1.3f))));
+    public static final DeferredItem<AxeItem> UNSTOPPABLE_AXE = ITEMS.register("unstoppable_axe",
+            () -> new AxeItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTier.UNSTOPPABLE, 17, -3f))));
+
     public static final DeferredItem<Item> INACTIVE_PAXEL = ITEMS.register("inactive_paxel",
             () -> new ModPaxelItem(ModToolTier.INACTIVE, new Item.Properties()
                     .durability(ModToolTier.INACTIVE.getUses())));
+    public static final DeferredItem<Item> UNSTOPPABLE_PAXEL = ITEMS.register("unstoppable_paxel",
+            () -> new ModPaxelItem(ModToolTier.UNSTOPPABLE, new Item.Properties()
+                    .durability(ModToolTier.UNSTOPPABLE.getUses())));
 
 
     public static final DeferredItem<Item> BREAD_UNSTOPPABLE = ITEMS.register("bread_unstoppable",
