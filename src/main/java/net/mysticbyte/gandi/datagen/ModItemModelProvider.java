@@ -56,6 +56,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.INACTIVE_AXE.asItem());
         handheldItem(ModItems.INACTIVE_PICKAXE.asItem());
         handheldItem(ModItems.INACTIVE_SHOVEL.asItem());
+        handheldItem(ModItems.INACTIVE_PAXEL.asItem());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

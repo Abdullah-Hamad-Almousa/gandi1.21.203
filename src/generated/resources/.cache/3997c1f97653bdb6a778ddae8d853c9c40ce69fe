@@ -1,9 +1,0 @@
-// 1.21.1	2025-11-14T05:59:07.9062183	Tags for minecraft:item mod id grindingandindustrialization
-be4fd6cf52581cba9edea5d8350965928431de1f data/grindingandindustrialization/tags/item/gears.json
-2d133a076c1ce6ecda15e8edaa451c0423813706 data/grindingandindustrialization/tags/item/lens.json
-31f9b94806c6a2adb3d34413a637623646ab5b49 data/grindingandindustrialization/tags/item/wands.json
-542de6009d51d29d1c476c8f837211e026a25655 data/minecraft/tags/item/axes.json
-ae08cedf29fe5012b5a0cf08330688c3c158087f data/minecraft/tags/item/hoes.json
-a32a5d77f1e76c74bfcdea05ee68bc3d0c372639 data/minecraft/tags/item/pickaxes.json
-82f5e2c5fa01d3b321ab0bd244ab806be7dcfbe8 data/minecraft/tags/item/shovels.json
-9c0ed53c2317074316b51aa7a6c6cff8dd2d8dbe data/minecraft/tags/item/swords.json

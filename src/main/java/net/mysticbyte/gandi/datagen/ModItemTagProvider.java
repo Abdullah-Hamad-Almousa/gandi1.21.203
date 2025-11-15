@@ -8,6 +8,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.mysticbyte.gandi.GandI;
 import net.mysticbyte.gandi.item.ModItems;
+import net.mysticbyte.gandi.item.ModToolTier;
 import net.mysticbyte.gandi.util.ModTags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -57,6 +58,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.INACTIVE_HOE.get());
         tag(ItemTags.AXES)
                 .add(ModItems.INACTIVE_AXE.get());
+
+        tag(ItemTags.AXES)
+                .add(ModItems.INACTIVE_PAXEL.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.INACTIVE_PAXEL.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.INACTIVE_PAXEL.get());
 
     }
 }

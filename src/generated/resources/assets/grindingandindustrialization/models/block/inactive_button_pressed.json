@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_pressed",
-  "textures": {
-    "texture": "grindingandindustrialization:block/inactive_gear_ii"
-  }
-}

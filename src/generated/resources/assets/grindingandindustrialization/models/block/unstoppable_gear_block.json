@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "grindingandindustrialization:block/unstoppable_gear_block"
-  }
-}

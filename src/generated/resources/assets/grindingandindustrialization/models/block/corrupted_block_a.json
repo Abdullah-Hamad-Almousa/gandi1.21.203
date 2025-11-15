@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "grindingandindustrialization:block/corrupted_block_a"
-  }
-}

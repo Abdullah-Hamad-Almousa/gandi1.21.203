@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.INACTIVE_AXE);
                         output.accept(ModItems.INACTIVE_PICKAXE);
                         output.accept(ModItems.INACTIVE_HOE);
+                        output.accept(ModItems.INACTIVE_PAXEL);
                         //custom food
                         output.accept(ModItems.BREAD_UNSTOPPABLE);
                     })

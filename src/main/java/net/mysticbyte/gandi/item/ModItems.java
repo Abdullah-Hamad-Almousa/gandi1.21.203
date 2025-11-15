@@ -161,6 +161,10 @@ public class ModItems {
             () -> new HoeItem(ModToolTier.INACTIVE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTier.INACTIVE, 7, -0.3f))));
 
+    public static final DeferredItem<Item> INACTIVE_PAXEL = ITEMS.register("inactive_paxel",
+            () -> new ModPaxelItem(ModToolTier.INACTIVE, new Item.Properties()
+                    .durability(ModToolTier.INACTIVE.getUses())));
+
 
     public static final DeferredItem<Item> BREAD_UNSTOPPABLE = ITEMS.register("bread_unstoppable",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BREAD_UNSTOPPABLE))
