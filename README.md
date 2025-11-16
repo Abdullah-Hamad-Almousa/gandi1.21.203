@@ -11,4 +11,4 @@ No part of this repository, including but not limited to the code, documentation
 may be copied, modified, distributed, or used in any form without the explicit written permission  
 of the copyright holder.
 
-+ [![Grinding and industrialization](http://cf.way2muchnoise.eu/1366711.svg) Grinding and industrialization]([https://www.curseforge.com/minecraft/modpacks/grinding-and-industrialization](https://www.curseforge.com/minecraft/mc-mods/just-grinding))
++ [![Grinding and industrialization](http://cf.way2muchnoise.eu/1366711.svg) Just grinding]([https://www.curseforge.com/minecraft/modpacks/grinding-and-industrialization](https://www.curseforge.com/minecraft/mc-mods/just-grinding))
